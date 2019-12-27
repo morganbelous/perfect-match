@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/site.css" media="all"/>
+        <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="scripts/scripts.js"></script>
+        <title>Results</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <!--Source: Created by client -->
+                <a href = "index.html"><img src="images/logo.png" alt="perfect match logo"></a>
+            </div>
+
+            <div id="menu-bar">
+
+                <div class= "menu" id ="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+
+                <div class="nav-container">
+                    <ul class= "nav" id="nav">
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "about.html">About</a></li>
+                        <li><a href = "statistics.html">Statistics</a></li>
+                        <li><a href = "contact.html">Contact</a></li>
+                        <li class ="take-survey"><a href = "take-survey-questions.html">Take the Survey!</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="circle" id="circle"></div>
+        </header>
+
+        <div class = "main">
+
+            <div class ="results-wrapper">
+                <h1>The Results Are In!</h1>
+
+                <div class="row1">
+                    <div class = "results-section">
+                        <h2>Your Matches</h2>
+                        <ol>
+                            <li>first match</li>
+                            <li>second match</li>
+                            <li>third match</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class ="row2">
+                      <div class="results-image">
+                        <!--Source: http://www.maggiegallagherphotography.com/blog/sunny-cindys-picture-perfect-engagement-session-cornell-university-ithaca-ny, Maggie Gallagher Photography of Sunny and Cindy's Engagement Photos-->
+                        <img alt="A.D. White Library" src="images/library-love.jpg"/> <p> Source:<cite><a href="http://www.maggiegallagherphotography.com/blog/sunny-cindys-picture-perfect-engagement-session-cornell-university-ithaca-ny">Maggie Gallagher Photography</a></cite></p>
+                      </div>
+
+                        <div class="results-image">
+                          <!--Source: https://www.flickr.com/photos/btf5/22137788784, Taken by Barbara Friedman for Flickr-->
+                          <img alt="Libe Slope Sunset" src="images/libe-sunset.jpg"/> <p> Source:<cite><a href="https://www.flickr.com/photos/btf5/22137788784">Barbara Friedman via Flickr</a></cite></p>
+                        </div>
+                </div>
+
+                <div class ="row3">
+                    <h2>What Now?</h2>
+
+                    <div class="row3-wrapper">
+                        <div class="results-section">
+                            <h3>Contact Your Matches:</h3>
+                            <p>Match One's Email and Facebook Profile</p>
+                            <p>Match Two's Email and Facebook Profile</p>
+                            <p>Match Three's Email and Facebook Profile</p>
+                        </div>
+
+                        <div class="results-section">
+                            <h3>Upcoming Social Events:</h3>
+                            <p>Placeholder for information about upcoming events, such as ice skating, discounts on bubble tea, and more!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--followed code on info 1300 github-->
+            <div class="gallery">
+                <p> Here are some examples of activities to do with your perfect match! </p>
+
+                <!--Source: https://www.facebook.com/Cornell/photos/a.10150693819830132/10156807934935132/?type=3&theater-->
+                <figure id="gallery-wheel">
+                    <img alt="Wheel" src="images/wheel.jpg"/>
+                    <figcaption>Enjoy some outdoor fun at various Cornell organized events with your match. <cite>Source:<a href="https://www.facebook.com/Cornell/photos/a.10150693819830132/10156807934935132/?type=3&theater">Cornell University Facebook</a></cite></figcaption>
+                </figure>
+
+                <!--Source: http://blogs.cornell.edu/rosescholarssp16/2016/02/01/starting-the-new-semester-with-an-excursion-to-lynah-rink/ -->
+                <figure class="hidden" id="gallery-skating">
+                    <img alt="skating" src="images/skating.jpg"/>
+                    <figcaption>Ice skating with your Perfect Match for free at the one and only Lynah Rank. <cite>Source:<a href="http://blogs.cornell.edu/rosescholarssp16/2016/02/01/starting-the-new-semester-with-an-excursion-to-lynah-rink/ ">Rose Scholar Blog</a></cite></figcaption>
+                </figure>
+
+                <!--Source: https://www.facebook.com/Cornell/photos/a.10151833888485132/10156516294920132/?type=3&theater -->
+                <figure class="hidden" id="gallery-window">
+                    <img alt="window" src="images/window.jpg"/>
+                    <figcaption>Get to know your Perfect Match over a study date. <cite>Source:<a href="https://www.facebook.com/Cornell/photos/a.10151833888485132/10156516294920132/?type=3&theater">Cornell University Facebook</a></cite></figcaption>
+                </figure>
+
+                <!--Source: https://www.facebook.com/Cornell/photos/a.10150156230970132/10156001596650132/?type=3&theater from @itsahardknocklife_ on Instagram. featuring Emma Henning and Mon Hard -->
+                <figure class="hidden" id="gallery-snowman">
+                    <img alt="Outdoor Date" src="images/snowman.png"/>
+                    <figcaption>Enjoy outdoor fun in the wintery Ithaca weather. <cite>Source:<a href="https://www.facebook.com/Cornell/photos/a.10150156230970132/10156001596650132/?type=3&theater">Cornell University Facebook</a></cite> </figcaption>
+                </figure>
+
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class = "footer-wrapper">
+                <div class = "footer-section">
+
+                    <a href="mailto:cornellbusinessanalytics@gmail.com?" target="_top" class="link">cornellbusinessanalytics@gmail.com</a>
+
+                    <a href="https://www.cornellbusinessanalytics.com" target="_top" class="link">www.cornellbusinessanalytics.com</a>
+
+                    <h3>Privacy Policy</h3>
+                </div>
+
+                <div class = "footer-section">
+                    <div class ="icons">
+                        <!--Source: https://www.iconfinder.com-->
+                        <a href = "https://www.instagram.com/cornellbusinessanalytics/" target="_blank"><img src="images/instagram.png" alt="Instagram logo"></a>
+                        <a href = "https://www.facebook.com/CornellBusinessAnalytics/" target="_blank"><img src="images/facebook.png" alt="Facebook logo"></a>
+                    </div>
+                    <cite><a href="https://www.iconfinder.com">Icons</a></cite>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

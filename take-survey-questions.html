@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/site.css" media="all"/>
+        <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="scripts/scripts.js"></script>
+        <title>Survey</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <!--Source: Created by client -->
+                <a href = "index.html"><img src="images/logo.png" alt="perfect match logo"></a>
+            </div>
+
+            <div id="menu-bar">
+
+                <div class= "menu" id ="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+
+                <div class="nav-container">
+                    <ul class= "nav" id="nav">
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "about.html">About</a></li>
+                        <li><a href = "statistics.html">Statistics</a></li>
+                        <li><a href = "contact.html">Contact</a></li>
+                        <li class ="take-survey"><a href = "take-survey-questions.html">Take the Survey!</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="circle" id="circle"></div>
+
+        </header>
+
+        <div class = "main">
+          <h2> Perfect Match Questionnaire </h2>
+          <div class = "questionnaire">
+            <form id = "questions" method = "post" action = "https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate>
+
+
+              <div class="element">
+                  <label for = "first_name">What is your first name?</label>
+                  <div class = "top_error">
+                      <span class = "error_message hidden" id = "first_name_error">
+                          Please provide your first name.
+                      </span>
+                      <input type = "text" id = "first_name" name = "first_name" required/>
+                  </div>
+              </div>
+
+              <div class="element">
+                  <label for = "last_name">What is your last name?</label>
+                  <div class = "top_error">
+                      <span class = "error_message hidden" id = "last_name_error">
+                          Please provide your last name.
+                      </span>
+                      <input type = "text" id = "last_name" name = "last_name" required/>
+                  </div>
+              </div>
+
+              <div class="element">
+                  <label for = "facebook_url">Please provide a link to your Facebook profile</label>
+                  <div class = "top_error">
+                      <span class = "error_message hidden" id = "facebook_error">
+                          Please provide the URL to your Facebook profile.
+                      </span>
+                      <input type = "URL" id = "facebook_url" name = "facebook_url" required/>
+                  </div>
+              </div>
+
+              <!-- gender as radio buttons-->
+
+              <!-- gender to be matched with as buttons -->
+
+              <div class="element">
+                  <label for = "age">What is your age?</label>
+                  <div class = "top_error">
+                      <span class = "error_message hidden" id = "age_error">
+                          Please provide a valid age.
+                      </span>
+                      <input type = "number" id = "age" name = "age" required/>
+                  </div>
+              </div>
+
+              <!-- age range slider from 18 to 30 -->
+
+              <div class="element">
+                  <label for = "height">How tall are you in inches?</label>
+                  <div class = "top_error">
+                      <span class = "error_message hidden" id = "height_error">
+                          Please provide a valid height in inches.
+                      </span>
+                      <input type = "number" id = "height" name = "height" required/>
+                  </div>
+              </div>
+
+            <!-- ethnicity radio buttons for white, black, south asian, east asian, hispanic/latino, other (describe)-->
+
+            <div class="element">
+              <label >What is your ethnicity?</label>
+              <div class = "top_error">
+                <span class = "error_message hidden" id= "ethnicity_error">
+                  Please check at least one of the checkboxes.
+                </span>
+              <div>
+                <input type = "checkbox" id="white" name="white">
+                <label for="white">White</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="black" name="black">
+                <label for="black">Black</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="south_asian" name="south_asian">
+                <label for="south_asian">South Asian</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="east_asian" name="east_asian">
+                <label for="east_asian">East Asian</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="hispanic_latino" name="hispanic_latino">
+                <label for="hispanic_latino">Hispanic/Latino</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="other" name="other">
+                <label for="other">Other</label>
+              </div>
+              </div>
+            </div>
+
+            <!-- left to right slider for political tendencies-->
+            <div class="element">
+              <label >What are your political tendencies?</label>
+              <div class = "top_error">
+                  <span class = "error_message hidden" id = "political_error">
+                    Please indicate your politcal tendencies on the slider.
+                  </span>
+                  <input type ="range" name="points" min="0" max="8">
+                  <label id="conservative">Liberal(Left)</label>
+                  <label id="liberal">Conservative(right)</label>
+                </div>
+              </div>
+            <!--left to right slider for religious tendencies -->
+            <div class="element">
+              <label >How religious are you?</label>
+              <div class = "top_error">
+                  <span class = "error_message hidden" id = "religious_error">
+                    Please how religious you are on the slider.
+                  </span>
+                  <input type ="range" name="points" min="0" max="8">
+                  <label id="not_religious">Not Religious</label>
+                  <label id="very_religious">Very Religious</label>
+                </div>
+              </div>
+            <!-- radio buttons for year in school-->
+            <div class="element">
+              <label >What year are you?</label>
+              <div class = "top_error">
+                <span class = "error_message hidden" id= "year_error">
+                  Please check at least one of the checkboxes.
+                </span>
+              <div>
+                <input type = "checkbox" id="freshman" name="freshman">
+                <label for="freshman">Freshman</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="sophomore" name="sophomore">
+                <label for="sophomore">Sophomore</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="junior" name="junior">
+                <label for="junior">Junior</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="senior" name="senior">
+                <label for="senior">Senior</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="masters_student" name="masters_student">
+                <label for="masters_student">Masters Student</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="phd_student" name="phd_student">
+                <label for="phd_student">PhD student</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="faculty_staff" name="faculty_staff">
+                <label for="faculty_staff">Faculty/Staff</label>
+              </div>
+              </div>
+            </div>
+            <!-- check list for campus involvement -->
+            <div class="element">
+              <label >What are you involved with on campus?</label>
+              <div class = "top_error">
+                <span class = "error_message hidden" id= "extracurricular_error">
+                  Please check at least one of the checkboxes.
+                </span>
+              <div>
+                <input type = "checkbox" id="cornell_athletics" name="cornell_athletics">
+                <label for="cornell_athletics">Cornell Athletics</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="greeklife" name="greeklife">
+                <label for="greeklife">Greek Life</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="professional_fraternity" name="professional_fraternity">
+                <label for="professional_fraternity">Profession Fraternity</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="professional_club" name="professional_club">
+                <label for="professional_club">Professional Club</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="project_team" name="project_team">
+                <label for="project_team">Project Team</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="club_sports" name="clubs_sports">
+                <label for="club_sports">Club Sports</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="social_club" name="social_club">
+                <label for="social_club">Social Club</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="cultural_club" name="cultural_club">
+                <label for="cultural_club">Cultural Club</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="other_clubs" name="other_clubs">
+                <label for="other_clubs">Other Clubs</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="ra" name="ra">
+                <label for="ra">RA</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="TA" name="TA">
+                <label for="TA">TA</label>
+              </div>
+              <div>
+                <input type = "checkbox" id="none_club" name="none_club">
+                <label for="none_club">None</label>
+              </div>
+              </div>
+            </div>
+<!-- link to a new page for the srongly agree/disagree sliders-->
+
+              <button class="form-button" type="submit">Submit</button>
+
+            </form>
+          </div>
+
+        </div>
+
+        <footer>
+            <div class = "footer-wrapper">
+                <div class = "footer-section">
+
+                    <a href="mailto:cornellbusinessanalytics@gmail.com?" target="_top" class="link">cornellbusinessanalytics@gmail.com</a>
+
+                    <a href="https://www.cornellbusinessanalytics.com" target="_top" class="link">www.cornellbusinessanalytics.com</a>
+
+                    <h3>Privacy Policy</h3>
+                </div>
+
+                <div class = "footer-section">
+                    <div class ="icons">
+                        <!--Source: https://www.iconfinder.com-->
+                        <a href = "https://www.instagram.com/cornellbusinessanalytics/" target="_blank"><img src="images/instagram.png" alt="Instagram logo"></a>
+                        <a href = "https://www.facebook.com/CornellBusinessAnalytics/" target="_blank"><img src="images/facebook.png" alt="Facebook logo"></a>
+                    </div>
+                    <cite><a href="https://www.iconfinder.com">Icons</a></cite>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </body>
+
+</html>

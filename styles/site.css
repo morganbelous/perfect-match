@@ -1,0 +1,859 @@
+html{
+    font-family: sans-serif;
+    letter-spacing: 0.15em;
+}
+
+html,
+body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+
+/* start of navigation */
+header{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #9A1750;
+    white-space: nowrap;
+}
+
+.logo{
+    margin-right: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+h1{
+    font-size: 40px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+ul li{
+    display: inline-block;
+}
+
+a{
+    color: black;
+}
+
+.nav a{
+    color: white;
+    font-size: 15px;
+    margin: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+
+.take-survey{
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.take-survey a{
+    color: #9A1750;
+}
+
+.take-survey a:hover{
+    color: #EA3886;
+}
+
+/* code from: https://codepen.io/jstn/pen/zuDst */
+.nav a:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+/* end of navigation */
+
+/*main content*/
+.main{
+    padding-top: 80px;
+    margin-bottom: 30px;
+}
+
+/* start of homepage*/
+.blurb {
+  width: 500px;
+  font-size: 20px;
+}
+
+.main-header {
+  margin: 0;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.main-emphasis-1 {
+  color: #9A1750;
+  font-size: 60px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.main-emphasis-2 {
+  color: #EA3886;
+  font-weight: bold;
+}
+
+.main-row1-wrapper {
+    margin: 60px 0px 0px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-logo img {
+    margin-top: 20px;
+}
+
+.survey-buttons-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.survey-button{
+    font-size: 23px;
+    margin-right: 15px;
+}
+
+.survey-button a{
+    text-decoration: none;
+    background-color: #9A1750;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.survey-button a:hover{
+    background-color: #EA3886;
+}
+
+.countdown-title{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 5px 0 5px;
+}
+
+.counter-wrapper h3{
+    margin: auto;
+    margin-top: 20px;
+}
+
+#countdown{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    background-color: #9A1750;
+    padding: 10px;
+    width: 375px;
+}
+/* end of homepage*/
+
+/*start of about page*/
+.about-title{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.about-our-mission p, .about-who-we-are p{
+    margin: 10px;
+}
+
+.about-our-mission, .about-who-we-are, .faq-container, .about-meet-the-team {
+  background-color: #F2DCDE;
+  padding: 25px;
+  margin: 10px 40px 10px 40px;
+  color: #9A1750;
+}
+
+.team-picture{
+    text-align: center;
+}
+
+.faq-container h1{
+    margin-bottom: 30px;
+}
+/*code from https://stackoverflow.com/questions/2842368/how-to-place-last-div-into-right-top-corner-of-parent-div-css*/
+.faq{
+  margin: 0px 00px 30px 10px;
+}
+
+.faq-question {
+	margin: 0px;
+	padding: 0px 0px 5px 0px;
+	display: inline-block;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.faq-question:hover {
+  color: #000000;
+}
+
+.faq-answer-container {
+  height: 0px;
+  overflow: hidden;
+  padding: 0px;
+  margin: 10px 0 0 20px;
+}
+
+.faq-answer a {
+  color: #000000;
+}
+
+.citation{
+  font-size: 12px;
+  color: black;
+}
+
+.team-picture img {
+  width: 650px;
+}
+
+em{
+    color: #F2596B;
+    font-weight: bold;
+}
+
+/*end of about page*/
+
+/*start of contact page*/
+.contact-title {
+    font-size: 40px;
+}
+
+.contact-and-socials{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-section{
+    margin: 10px;
+    background-color: #F2DCDE;
+    padding: 10px;
+    color: #9A1750;
+}
+
+.contact-and-socials cite a{
+    display: block;
+}
+
+.icons-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-icons{
+    text-align: center;
+}
+
+ .contact-icons img{
+     width: 80px;
+}
+
+.icons-wrapper cite{
+    text-align: center;
+}
+
+/*start of form on contact page*/
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.contactform {
+    color: #9A1750;
+    background-color: #F2DCDE;
+    margin: 0px 15px 30px 15px;
+    padding-top: 15px;
+}
+
+.contactform h2{
+    margin-left: 10px;
+}
+
+.element{
+    display: flex;
+    margin: 10px;
+}
+
+label{
+    text-align: right;
+    flex-basis: 40%;
+    margin-right: 10px;
+}
+
+#name, #email, #message{
+    width: 200px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.form-button{
+    width: 100px;
+    align-self: center;
+    margin-left: 350px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: #9A1750;
+    margin-bottom: 10px;
+}
+
+.form-button:hover {
+  color: white;
+  background-color: #EA3886;
+  cursor: pointer;
+}
+
+.error_message {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: red;
+}
+/*end  of form on contact page*/
+/*end of contact page*/
+
+/*start of statistics page*/
+.success-text-container, .success-metrics-container, .success-graphs-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.success-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.stats-row-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.metric{
+    margin: 20px;
+    background-color: #F2DCDE;
+    width: 200px;
+    color: #9A1750;
+}
+
+.metric h3{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 0
+}
+
+.metric h4{
+    text-align: center;
+}
+
+.gallery p{
+    margin: 0 10px 0 10px;
+}
+/*end of statistics page*/
+
+/*start of results page*/
+.results-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.row1 h2, .row3 h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.row3 h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.row3 p, .row3 h3{
+    margin-left: 20px;
+}
+
+.row1{
+    text-align: center;
+}
+
+.row1 ol{
+    font-size: 20px;
+}
+
+.row1 ol li{
+    margin-bottom: 10px;
+}
+
+.row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.results-section{
+    background-color: #F2DCDE;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.matches{
+    white-space: nowrap;
+}
+
+.row3-wrapper{
+    text-align: center;
+    vertical-align: top;
+}
+
+.matches ol{
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+}
+
+.results-section-a{
+  background-color: #9A1750;
+  margin: 10px;
+  text-align: center;
+}
+
+.results-section {
+    border-style:solid;
+    border-color:#9A1750;
+    width: 400px;
+    display: inline-block;
+    margin-right:15px;
+    margin-top: 20px;
+    text-align: left;
+    vertical-align: top;
+    color: #9A1750;
+  }
+
+.results-section ol li{
+    line-height: 1.5;
+}
+
+.results-image {
+  margin: 4px;
+  text-align: center;
+}
+
+.results-image p, .results-image a{
+    font-size: 12px;
+}
+
+/* start of gallery on results page*/
+.hidden {
+  display: none;
+}
+
+.gallery img {
+  width: 600px;
+}
+
+.gallery {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.gallery cite, .gallery cite a{
+    font-size: 12px;
+}
+
+#prev, #next{
+    background-color: #9A1750;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 20px 0 20px;
+}
+
+#prev:hover, #next:hover{
+    cursor: pointer;
+    background-color: #EA3886;
+}
+/*end of gallery on results page*/
+/*end of results page*/
+
+/*start of footer*/
+footer{
+    background-color: #FFA8B2;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+footer h3{
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+
+footer img{
+    width:30px;
+    height:30px;
+    margin-top: 10px;
+    display: block;
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.link{
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icons img{
+    margin: 10px;
+}
+
+.icons img:hover{
+    opacity: 0.7;
+}
+
+cite a{
+    margin: 10px;
+    font-size: 14px;
+}
+/*end of footer*/
+
+/* tablet */
+@media (max-width: 800px) {
+    header{
+        background-color: white;
+    }
+
+    /* followed this tutorial for mobile navigation: https://www.youtube.com/watch?v=F-mvXKKoSCU */
+    /*mobile navigation*/
+    .nav{
+        display: none;
+    }
+
+    .circle, #menu-bar{
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    .circle{
+        z-index: 1;
+        width: 0;
+        height: 0;
+        background: radial-gradient(circle, #9A1750, #9A1750);
+        transition: 0.3s ease;
+        border-radius: 50%;
+        margin: 30px 20px 20px 0;
+    }
+
+    #menu-bar{
+        z-index: 2;
+    }
+
+    .change-circle{
+        width: 550px;
+        height: 540px;
+        transform: translate(55%, -20%);
+    }
+
+    ul li{
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    #menu{
+        width: 35px;
+        height: 30px;
+        padding-top: 20px;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+
+    .menu{
+        margin-left: auto;
+    }
+
+    .bar{
+        height: 5px;
+        width: 100%;
+        background-color: white;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+        background-color: #9A1750;
+    }
+
+    #bar1{
+        transform: translateY(-4px);
+    }
+
+    #bar3{
+        transform: translateY(4px);
+    }
+
+    .change .bar{
+        background-color: white;
+    }
+
+    .change #bar1{
+        transform: translateY(4px) rotateZ(-45deg);
+    }
+
+    .change #bar2{
+        opacity: 0;
+    }
+
+    .change #bar3{
+        transform: translateY(-6px) rotateZ(45deg);
+    }
+
+    .change{
+        display: block;
+    }
+
+    /*tablet homepage*/
+    .main-row1-wrapper {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+
+    .survey-button{
+        text-align: center;
+    }
+
+    /*tablet contact page*/
+    .contact-wrapper{
+        flex-direction: column;
+    }
+
+    /*tablet about page*/
+    .team-picture img{
+        width: 480px;
+    }
+
+    /*tablet results page*/
+    .row2{
+        flex-direction: column;
+    }
+
+    .gallery img {
+      width: 500px;
+    }
+
+    /*tablet footer*/
+    .footer-wrapper{
+        flex-direction: column;
+    }
+
+    footer .icons{
+        justify-content: flex-start;
+        margin-left: -10px;
+    }
+
+    footer cite a{
+        margin-left: 0;
+    }
+}
+
+/*mobile*/
+@media (max-width: 600px) {
+
+    /*mobile home page*/
+    .blurb{
+        margin-left: 20px;
+    }
+
+    /*mobile about page*/
+    .faq{
+        margin-top: 30px;
+    }
+    .team-picture img{
+        width: 350px;
+    }
+
+    /*mobile stats page*/
+    .stats-row-1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main h1 {
+      margin: 0 auto;
+    }
+
+    .metric {
+      padding: 10px;
+    }
+
+    .gallery img{
+      width: 10px;
+    }
+
+    /*mobile results page*/
+    .results-image img, .gallery img{
+        width: 400px;
+    }
+}
+
+/*smaller mobile*/
+@media (max-width: 450px) {
+
+    /**smaller homepage**/
+    .main-header, .main-emphasis-1{
+        font-size: 35px;
+    }
+
+    .main-blurb, .main-emphasis-2{
+        font-size: 14px;
+    }
+
+    .blurb{
+        width: 300px;
+        margin-left: -10px;
+    }
+
+    .survey-buttons-wrapper{
+        flex-direction: column;
+    }
+
+    .survey-button a{
+        font-size: 20px;
+    }
+
+    .home-logo{
+        text-align: center;
+    }
+
+    .home-logo img{
+        width: 70%;
+        margin-left: -20px;
+    }
+
+    .countdown-title, #countdown{
+        font-size: 20px;
+    }
+
+    #countdown{
+        width: 270px;
+    }
+
+    /*smaller mobile contact page*/
+    .contact-section a{
+        font-size: 10px;
+    }
+
+    .contactform h2{
+        font-size: 20px;
+    }
+
+    .contactform label{
+        font-size: 12px;
+    }
+
+    .form-button{
+        margin-left: 190px;
+    }
+
+    /*smaller about page*/
+    .about-our-mission, .about-who-we-are, .faq-container, .about-meet-the-team{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .about-meet-the-team{
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    .team-picture img{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 280px;
+    }
+
+    .citation{
+        margin: auto;
+    }
+
+    /*smaller stats page*/
+    .metric{
+        padding: 0 40px 0 40px;
+    }
+    .gallery img {
+      width: 270px;
+      margin: 0;
+    }
+
+    /*smaller results page*/
+    .results-image img{
+        width: 300px;
+    }
+
+    .results-section{
+        width: 300px;
+    }
+
+    .results-section h3{
+        margin-right: 10px;
+    }
+
+    /*smaller footer*/
+    footer a{
+        font-size: 12px;
+    }
+
+    .footer-wrapper{
+        margin-left: 20px;
+    }
+}

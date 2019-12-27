@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/site.css" media="all"/>
+        <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="scripts/scripts.js"></script>
+        <title>About Us</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <!--Source: Created by client -->
+                <a href = "index.html"><img src="images/logo.png" alt="perfect match logo"></a>
+            </div>
+
+            <div id="menu-bar">
+
+                <div class= "menu" id ="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+
+                <div class="nav-container">
+                    <ul class= "nav" id="nav">
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "about.html">About</a></li>
+                        <li><a href = "statistics.html">Statistics</a></li>
+                        <li><a href = "contact.html">Contact</a></li>
+                        <li class ="take-survey"><a href = "take-survey-questions.html">Take the Survey!</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="circle" id="circle"></div>
+        </header>
+
+        <div class = "main">
+            <h1 class="about-title">About Us</h1>
+        <div class= "about-our-mission">
+          <h1>Our Mission</h1>
+            <p>Using networks and algorithmic data science to help Cornellians find their <em>~perfect match~</em> since 2018</p>
+        </div>
+
+        <div class ="about-who-we-are">
+          <h1>Who We Are</h1>
+          <p>Established in 2016, Cornell Business Analytics (CBA) is a student-run organization that offers business analytics services to on-campus and off-campus clients.</p>
+        </div>
+
+        <div class = "faq-container">
+
+            <h1>FAQs</h1>
+
+            <div class = "faq">
+                <div class="faq-question">+ When will the results be released?</div>
+                <div class = "faq-answer-container">
+                    <div class="faq-answer">February 13th at Noon</div>
+                </div>
+            </div>
+
+            <div class = "faq">
+                <div class="faq-question">+ How do the results work?</div>
+                <div class = "faq-answer-container">
+                    <div class="faq-answer">Each person will receive anywhere between 3 and 6 matches, all of which are reciprocal. Your netId will be released to each of your matches</div>
+                </div>
+            </div>
+
+            <div class = "faq">
+                <div class="faq-question">+ How are the matches generated?</div>
+                <div class = "faq-answer-container">
+                    <div class="faq-answer">Cornell Business Analytics has developed an internal machine learning algorithm to generate the pairings based on maximizing likelihood of becoming a couple. Want to learn more? <a href = "contact.html">Contact us</a> or <a href = "https://www.cornellbusinessanalytics.com/apply">apply</a> to Cornell Business Analytics!</div>
+                </div>
+            </div>
+
+            <div class = "faq">
+                <div class="faq-question">+ What is your tech stack?</div>
+                <div class = "faq-answer-container">
+                    <div class="faq-answer">Frontend - ReactJS; Backend - NodeJS; Database - MongoDB; Server - AWS; Algorithm - Python Pytorch. Interested in learning more? <a href = "contact.html">Contact us!</a></div>
+                </div>
+            </div>
+
+            <div class = "faq">
+                <div class="faq-question">+ Is my data safe?</div>
+                <div class = "faq-answer-container">
+                    <div class="faq-answer">Yes! All traffic to the site is TLS encrypted, and all stored data is encoded. That means even we can’t look at it!</div>
+                </div>
+            </div>
+
+            <div class = "faq">
+                <div class="faq-question">+ What about other legal questions?</div>
+                <div class = "faq-answer-container">
+                    <div class="faq-answer">Take a look at our Terms of Service(link) and Privacy Policy(link)</div>
+                </div>
+            </div>
+
+            <div class = "faq">
+                <div class="faq-question">+ Have any other questions?</div>
+                <div class = "faq-answer-container">
+                    <div class="faq-answer"><a href = "contact.html">Send us an email</a> and we’ll get back to you as soon as possible! </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-meet-the-team">
+          <h1>Meet The Team</h1>
+          <div class="team-picture">
+            <!--Source: https://news.cornell.edu/stories/2019/02/students-hope-algorithm-leads-valentines-day-matches-->
+            <img class="team-picture" alt="Perfect Match Team" src="images/teamphotobw.jpg"/>
+             <p class="citation"> From left: Victor Odouard ’21, Jeffrey Liu ‘19, Samantha Taylor ’22 and Jamal Hashim ’22. Source:<cite class="citation"><a class="citation" href="https://news.cornell.edu/stories/2019/02/students-hope-algorithm-leads-valentines-day-matches">Cornell Chronicle</a></cite></p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+          <div class = "footer-wrapper">
+              <div class = "footer-section">
+
+                  <a href="mailto:cornellbusinessanalytics@gmail.com?" target="_top" class="link">cornellbusinessanalytics@gmail.com</a>
+
+                  <a href="https://www.cornellbusinessanalytics.com" target="_top" class="link">www.cornellbusinessanalytics.com</a>
+
+                  <h3>Privacy Policy</h3>
+              </div>
+
+              <div class = "footer-section">
+                  <div class ="icons">
+                      <!--Source: https://www.iconfinder.com-->
+                      <a href = "https://www.instagram.com/cornellbusinessanalytics/" target="_blank"><img src="images/instagram.png" alt="Instagram logo"></a>
+                      <a href = "https://www.facebook.com/CornellBusinessAnalytics/" target="_blank"><img src="images/facebook.png" alt="Facebook logo"></a>
+                  </div>
+                  <cite><a href="https://www.iconfinder.com">Icons</a></cite>
+              </div>
+          </div>
+      </footer>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/site.css" media="all"/>
+        <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="scripts/scripts.js"></script>
+        <title>Statistics</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <!--Source: Created by client -->
+                <a href = "index.html"><img src="images/logo.png" alt="perfect match logo"></a>
+            </div>
+
+            <div id="menu-bar">
+
+                <div class= "menu" id ="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+
+                <div class="nav-container">
+                    <ul class= "nav" id="nav">
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "about.html">About</a></li>
+                        <li><a href = "statistics.html">Statistics</a></li>
+                        <li><a href = "contact.html">Contact</a></li>
+                        <li class ="take-survey"><a href = "take-survey-questions.html">Take the Survey!</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="circle" id="circle"></div>
+        </header>
+
+        <div class = "main">
+            <h1>Statistics</h1>
+            <div class="success-container">
+
+                <div class="stats-row-1">
+                    <div class="metric">
+                        <h3>4097</h3>
+                        <h4>Participants in 2019</h4>
+                    </div>
+
+                    <div class="metric">
+                        <h3>66%</h3>
+                        <h4>Chance of getting a response if you reach out</h4>
+                    </div>
+
+                    <div class="metric">
+                        <h3>61%</h3>
+                        <h4>Of matches met in person</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Followed code on INFO 1300 GitHub-->
+            <div class="gallery">
+                <p> Please refer to the graphics below for a better idea of the demographics of previous survey respondents! </p>
+                <figure id="gallery-gender">
+                    <img src="images/gender_graph.png" alt="Graph of Gender"/>
+                </figure>
+                <figure class="hidden" id="gallery-colleges">
+                    <img src="images/college_graph.png" alt="Graph of Colleges"/>
+                </figure>
+                <figure class="hidden" id="gallery-year">
+                    <img src="images/year_graph.png" alt="Graph of Year"/>
+                </figure>
+
+                <figure class="hidden" id="gallery-race">
+                    <img src="images/race_graph.png" alt="Graph of Race"/>
+                </figure>
+
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
+            </div>
+          </div>
+
+        <footer>
+            <div class = "footer-wrapper">
+                <div class = "footer-section">
+
+                    <a href="mailto:cornellbusinessanalytics@gmail.com?" target="_top" class="link">cornellbusinessanalytics@gmail.com</a>
+
+                    <a href="https://www.cornellbusinessanalytics.com" target="_top" class="link">www.cornellbusinessanalytics.com</a>
+
+                    <h3>Privacy Policy</h3>
+                </div>
+
+                <div class = "footer-section">
+                    <div class ="icons">
+                        <!--Source: https://www.iconfinder.com-->
+                        <a href = "https://www.instagram.com/cornellbusinessanalytics/" target="_blank"><img src="images/instagram.png" alt="Instagram logo"></a>
+                        <a href = "https://www.facebook.com/CornellBusinessAnalytics/" target="_blank"><img src="images/facebook.png" alt="Facebook logo"></a>
+                    </div>
+                    <cite class="citation"><a href="https://www.iconfinder.com">Icons</a></cite>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
